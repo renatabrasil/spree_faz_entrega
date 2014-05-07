@@ -43,10 +43,10 @@
 
 <% unless order.note.blank? %>
 <div class="row steps-data">
-  <div class="index columns omega sixteen">
+  <div class="index omega sixteen">
     <h6>Observação</h6>
     <div class="delivery">
-       <%= order.note %><br/>
+       <%= simple_format(@order.note) %>
     </div>
   </div>
   <br />

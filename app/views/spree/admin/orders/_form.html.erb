@@ -8,12 +8,11 @@
 
     <fieldset class="no-border-bottom">
       <legend align="center" class="stock-location" data-hook="stock-location">
-        <span class="shipment-number">Outras informações</span>
+        <span class="shipment-number">Observação</span>
       </legend>
     </fieldset>
     <div>
-      <strong>Observação:</strong>
-      <%= @order.note %>
+      <%= simple_format(@order.note) %>
     </div>
 
     <br />

@@ -92,15 +92,21 @@
     <% end %>
   </div>
 
+</fieldset>
+
+<fieldset id='order_note' data-hook>
+  <legend align="center">Observação</legend>
   <div>
-    <%= label_tag :note, 'Observação' %><br />
-    <%= text_area_tag "order[note]", nil, rows: 8, cols: 76 %>
+    <%= text_area_tag "order[note]", @order.note, rows: 8, cols: 76 %>
   </div>
 
+
 </fieldset>
+
 
 <br />
 
 <div class="form-buttons" data-hook="buttons">
   <%= submit_tag Spree.t(:save_and_continue), :class => 'continue button primary' %>
 </div>
+

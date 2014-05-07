@@ -38,3 +38,13 @@ div.variants-buttons label.ui-button.ui-state-active{
   background-color: #50a2f3;
   border: 2px solid rgba(0, 138, 189, 0.75);
 }
+
+#order_note legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #00adee;
+  padding: 5px;
+  margin-left: 15px;
+}
+
